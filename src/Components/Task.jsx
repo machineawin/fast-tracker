@@ -1,4 +1,5 @@
-const Task = (task) => {
+
+const Task = ({task}) => {
 
   return (
     <div>
