@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Header = (props) => {
   return (
     <header>
-        <h1>{props.title}{props.age}</h1>        
+        <h1>{props.title}</h1>        
     </header>
 
   )
@@ -16,3 +16,7 @@ Header.defaultProps = {
   age: '23',
 };
 
+Header.propTypes = {
+  title: PropTypes.number,
+  age: PropTypes.string,
+};

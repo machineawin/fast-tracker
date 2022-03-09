@@ -5,7 +5,7 @@ import Header from './Components/Header';
 function App() {
   return (
     <div className="container">
-      <Header title = 'Passed in Title'/>
+      <Header title = 'Not a number'/>
     </div>
   );
   
