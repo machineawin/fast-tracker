@@ -3,7 +3,7 @@ import Button from './Button';
 
 const Header = (props) => {
   return (
-    <header>
+    <header className='header'>
       <h1 style={myStyle}>{props.title}</h1>
       <Button 
       btnName='Add' 
@@ -15,8 +15,8 @@ const Header = (props) => {
 }
 
 const myStyle = {
-  color: 'red',
-  backgroundColor: 'lightblue'
+  color: 'black',
+  // backgroundColor: 'lightblue'
 };
 
 export default Header
