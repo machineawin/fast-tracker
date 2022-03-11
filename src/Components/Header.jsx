@@ -1,9 +1,14 @@
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 const Header = (props) => {
   return (
     <header>
-        <h1 style={myStyle}>{props.title}</h1>        
+      <h1 style={myStyle}>{props.title}</h1>
+      <Button 
+      btnName='Add' 
+      btnColour = 'green'
+      />
     </header>
 
   )

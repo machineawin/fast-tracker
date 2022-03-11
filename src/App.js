@@ -6,11 +6,7 @@ import Button from './Components/Button';
 function App() {
   return (
     <div className="container">
-      <Header title = 'Task Tracker'/>
-      <Button 
-      btnName='Add' 
-      btnColour = 'green'
-      />
+      <Header title = 'Task Tracker'/>      
       <Tasks/>
 
     </div>
