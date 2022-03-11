@@ -8,9 +8,7 @@ const btnStyle = {
 }
 
   return (
-    <div>
-        <button className='btn' style={btnStyle} >{btnName}</button>
-    </div>
+  <button className='btn' style={btnStyle} >{btnName}</button>
   )
 }
 

@@ -11,6 +11,8 @@ function App() {
       btnName='Add' 
       btnColour = 'green'
       />
+      <Tasks/>
+
     </div>
   );
   
