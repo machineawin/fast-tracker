@@ -13,4 +13,9 @@ const btnStyle = {
   )
 }
 
+Button.defaultProps = {
+    btnColour: 'steelblue',
+    btnName: 'I\'m a button',
+}
+
 export default Button
