@@ -1,8 +1,8 @@
-import
-props
-default props
-import proptypes
-inline styling
-separate styling const
-
-
+Header is Task Tracker - class 'header'
+Add a button - class 'btn'
+Change button to a component
+props color and text in button
+default props and propTypes in button
+create Tasks.jsx - create the tasks array
+map through tasks (create list) 
+useState hook to use state inside a function
