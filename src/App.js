@@ -29,6 +29,12 @@ function App() {
     ]
 )
 
+//Toggle Reminder
+const toggleReminder = (id) => {
+  console.log('toggleReminder', id)
+}
+
+
 //Delete Task
 const deleteTask  = (id) => {
   setTasks (tasks.filter((task) => task.id !== id) )
@@ -40,6 +46,7 @@ const deleteTask  = (id) => {
       {tasks.length >0 ? (<Tasks 
         tasks = {tasks}
         onDelete = {deleteTask}
+        onToggle = {toggleReminder}
       />) : 'You have completed all your tasks!'
     }
 
