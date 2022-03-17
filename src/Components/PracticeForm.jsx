@@ -2,7 +2,7 @@ import React from 'react'
 
 const PracticeForm = () => {
   return (
-    <form>
+    <form action='results.html' method='GET'>
         <div>
             <label>Name </label>
             <input></input>

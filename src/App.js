@@ -45,7 +45,7 @@ const deleteTask  = (id) => {
   return (
     <div className="container">
       <Header title = 'Task Tracker'/>  
-      <PracticeForm/>    
+      <AddTask/>    
       {tasks.length >0 ? (<Tasks 
         tasks = {tasks}
         onDelete = {deleteTask}
