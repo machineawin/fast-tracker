@@ -3,6 +3,8 @@ import Tasks from './Components/Tasks';
 import Header from './Components/Header';
 import Button from './Components/Button';
 import { useState } from "react"
+import AddTask from './Components/AddTask';
+import PracticeForm from './Components/PracticeForm';
 
 function App() {
 
@@ -42,7 +44,8 @@ const deleteTask  = (id) => {
 
   return (
     <div className="container">
-      <Header title = 'Task Tracker'/>      
+      <Header title = 'Task Tracker'/>  
+      <PracticeForm/>    
       {tasks.length >0 ? (<Tasks 
         tasks = {tasks}
         onDelete = {deleteTask}
