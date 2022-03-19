@@ -31,6 +31,12 @@ function App() {
     ]
 )
 
+//Add Task
+const addTask = (task) => {
+  console.log (task);
+}
+
+
 //Toggle Reminder
 const toggleReminder = (id) => {
   setTasks (tasks.map ((task) => task.id === id ? { ...task, reminder: !task.reminder } : task) )
@@ -45,11 +51,11 @@ const deleteTask  = (id) => {
   return (
     <div className="container">
       <Header title = 'Task Tracker'/>  
-      <AddTask/>    
+      <AddTask onAdd = {addTask}/>    
       {tasks.length >0 ? (<Tasks 
         tasks = {tasks}
         onDelete = {deleteTask}
-        onToggle = {toggleReminder}
+        onToggle = {toggleReminder}        
       />) : 'You have completed all your tasks!'
     }
 
